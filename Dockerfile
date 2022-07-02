@@ -28,7 +28,7 @@ COPY ./requirements.txt /requirements.txt
 RUN pip install -r /requirements.txt
 
 #COPY ./start /start
-RUN sed -i 's/\r$//g' /start
-RUN chmod +x /start
+#RUN sed -i 's/\r$//g' /start
+#RUN chmod +x /start
 
 WORKDIR /app
