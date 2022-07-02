@@ -21,6 +21,6 @@ jobs:
       - name: wait
         run: docker-compose run web python manage.py wait_for_db
       - name: Test
-        run: docker-compose run web python manage.py test --keepdb
+        run: docker-compose run web python manage.py test
       - name: Push
         run: docker-compose push
