@@ -12,12 +12,12 @@ jobs:
         with:
           username: ${{ secrets.DOCKERHUB_USER }}
           password: ${{ secrets.DOCKERHUB_TOKEN }}
-      - name: Checkout
-        uses: actions/checkout@v2
+#      - name: Checkout
+#        uses: actions/checkout@v2
       - name: Pull
         run: docker-compose pull
-#      - name: Up
-#        run: docker-compose up -d
+      - name: Up
+        run: docker-compose up -d
       - name: wait
         run: docker-compose run web python manage.py wait_for_db
       - name: Test
