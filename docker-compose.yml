@@ -6,7 +6,7 @@ services:
       context: .
       dockerfile: ./Dockerfile
     image: leemoney93/ci
-    command: /start
+#    command: /start
     volumes:
       - .:/app
     expose:
