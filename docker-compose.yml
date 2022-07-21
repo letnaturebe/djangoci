@@ -2,6 +2,7 @@ version: '3.8'
 
 services:
   web:
+    image: leemoney93/ci
     build:
       context: .
       dockerfile: ./Dockerfile
