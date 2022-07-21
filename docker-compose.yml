@@ -5,8 +5,6 @@ services:
     build:
       context: .
       dockerfile: ./Dockerfile
-    image: leemoney93/ci
-#    command: /start
     volumes:
       - .:/app
     expose:
